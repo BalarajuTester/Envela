@@ -1,0 +1,254 @@
+<html>
+<head>
+<title>TestNG:  TestOnChromeDriver</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>TestOnChromeDriver</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>35/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Mar 17 12:49:53 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>1086 seconds (1086656 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Oxhead_excel.TestCases.Customer_is_able_to_do_the_payment_method_process()'><b>Customer_is_able_to_do_the_payment_method_process</b><br>Test class: Oxhead_excel.TestCases</td>
+<td></td>
+<td>31</td>
+<td>Oxhead_excel.TestCases@1a6d8329</td></tr>
+<tr>
+<td title='Oxhead_excel.TestCases.Customer_Is_Able_To_See_Product_In_ShoppingCart_Page_From_NewArrivals_page()'><b>Customer_Is_Able_To_See_Product_In_ShoppingCart_Page_From_NewArrivals_page</b><br>Test class: Oxhead_excel.TestCases</td>
+<td></td>
+<td>34</td>
+<td>Oxhead_excel.TestCases@1a6d8329</td></tr>
+<tr>
+<td title='Oxhead_excel.TestCases.click_On_Lost_Your_Password_Link()'><b>click_On_Lost_Your_Password_Link</b><br>Test class: Oxhead_excel.TestCases</td>
+<td></td>
+<td>8</td>
+<td>Oxhead_excel.TestCases@1a6d8329</td></tr>
+<tr>
+<td title='Oxhead_excel.TestCases.customer_Is_Able_To_See_The_OrderDetails()'><b>customer_Is_Able_To_See_The_OrderDetails</b><br>Test class: Oxhead_excel.TestCases</td>
+<td></td>
+<td>25</td>
+<td>Oxhead_excel.TestCases@1a6d8329</td></tr>
+<tr>
+<td title='Oxhead_excel.TestCases.Customer_Is_able_To_Track_The_Cash_On_Delivery()'><b>Customer_Is_able_To_Track_The_Cash_On_Delivery</b><br>Test class: Oxhead_excel.TestCases</td>
+<td></td>
+<td>22</td>
+<td>Oxhead_excel.TestCases@1a6d8329</td></tr>
+<tr>
+<td title='Oxhead_excel.TestCases.customer_Is_clicking_On_The_Shop_Now_Button_It_Has_To_Redirect_To_That_Particular_Page()'><b>customer_Is_clicking_On_The_Shop_Now_Button_It_Has_To_Redirect_To_That_Particular_Page</b><br>Test class: Oxhead_excel.TestCases</td>
+<td></td>
+<td>39</td>
+<td>Oxhead_excel.TestCases@1a6d8329</td></tr>
+<tr>
+<td title='Oxhead_excel.TestCases.select_Membership_option_in_the_select_category()'><b>select_Membership_option_in_the_select_category</b><br>Test class: Oxhead_excel.TestCases</td>
+<td></td>
+<td>23</td>
+<td>Oxhead_excel.TestCases@1a6d8329</td></tr>
+<tr>
+<td title='Oxhead_excel.TestCases.Customer_Is_Able_To_Logout_From_The_Application()'><b>Customer_Is_Able_To_Logout_From_The_Application</b><br>Test class: Oxhead_excel.TestCases</td>
+<td></td>
+<td>20</td>
+<td>Oxhead_excel.TestCases@1a6d8329</td></tr>
+<tr>
+<td title='Oxhead_excel.TestCases.Customer_Is_Able_To_See_The_AllProducts_On_Browse_Catagories()'><b>Customer_Is_Able_To_See_The_AllProducts_On_Browse_Catagories</b><br>Test class: Oxhead_excel.TestCases</td>
+<td></td>
+<td>17</td>
+<td>Oxhead_excel.TestCases@1a6d8329</td></tr>
+<tr>
+<td title='Oxhead_excel.TestCases.customer_Is_Able_To_See_The_HomePage()'><b>customer_Is_Able_To_See_The_HomePage</b><br>Test class: Oxhead_excel.TestCases</td>
+<td></td>
+<td>13</td>
+<td>Oxhead_excel.TestCases@1a6d8329</td></tr>
+<tr>
+<td title='Oxhead_excel.TestCases.select_Palladium_option_in_the_select_category()'><b>select_Palladium_option_in_the_select_category</b><br>Test class: Oxhead_excel.TestCases</td>
+<td></td>
+<td>15</td>
+<td>Oxhead_excel.TestCases@1a6d8329</td></tr>
+<tr>
+<td title='Oxhead_excel.TestCases.Customer_Is_Able_To_See_The_Platinum_On_Browse_Catagories()'><b>Customer_Is_Able_To_See_The_Platinum_On_Browse_Catagories</b><br>Test class: Oxhead_excel.TestCases</td>
+<td></td>
+<td>16</td>
+<td>Oxhead_excel.TestCases@1a6d8329</td></tr>
+<tr>
+<td title='Oxhead_excel.TestCases.select_Blank_option_in_the_select_category()'><b>select_Blank_option_in_the_select_category</b><br>Test class: Oxhead_excel.TestCases</td>
+<td></td>
+<td>17</td>
+<td>Oxhead_excel.TestCases@1a6d8329</td></tr>
+<tr>
+<td title='Oxhead_excel.TestCases.Customer_Ablet_To_Do_SignUp_With_Valid_Email_Address()'><b>Customer_Ablet_To_Do_SignUp_With_Valid_Email_Address</b><br>Test class: Oxhead_excel.TestCases</td>
+<td></td>
+<td>8</td>
+<td>Oxhead_excel.TestCases@1a6d8329</td></tr>
+<tr>
+<td title='Oxhead_excel.TestCases.Customer_Is_Able_To_See_Shipping_And_Delivery_Page()'><b>Customer_Is_Able_To_See_Shipping_And_Delivery_Page</b><br>Test class: Oxhead_excel.TestCases</td>
+<td></td>
+<td>37</td>
+<td>Oxhead_excel.TestCases@1a6d8329</td></tr>
+<tr>
+<td title='Oxhead_excel.TestCases.Customer_Is_Not_Able_To_See_Product_In_ShoppingCart_Page()'><b>Customer_Is_Not_Able_To_See_Product_In_ShoppingCart_Page</b><br>Test class: Oxhead_excel.TestCases</td>
+<td></td>
+<td>15</td>
+<td>Oxhead_excel.TestCases@1a6d8329</td></tr>
+<tr>
+<td title='Oxhead_excel.TestCases.Customer_Is_Able_To_See_The_Gold_On_Browse_Catagories()'><b>Customer_Is_Able_To_See_The_Gold_On_Browse_Catagories</b><br>Test class: Oxhead_excel.TestCases</td>
+<td></td>
+<td>15</td>
+<td>Oxhead_excel.TestCases@1a6d8329</td></tr>
+<tr>
+<td title='Oxhead_excel.TestCases.Customer_Is_Able_To_See_Product_In_ShoppingCart_Page()'><b>Customer_Is_Able_To_See_Product_In_ShoppingCart_Page</b><br>Test class: Oxhead_excel.TestCases</td>
+<td></td>
+<td>23</td>
+<td>Oxhead_excel.TestCases@1a6d8329</td></tr>
+<tr>
+<td title='Oxhead_excel.TestCases.click_On_Cross_Mark_Button()'><b>click_On_Cross_Mark_Button</b><br>Test class: Oxhead_excel.TestCases</td>
+<td></td>
+<td>2</td>
+<td>Oxhead_excel.TestCases@1a6d8329</td></tr>
+<tr>
+<td title='Oxhead_excel.TestCases.click_On_Close_Button()'><b>click_On_Close_Button</b><br>Test class: Oxhead_excel.TestCases</td>
+<td></td>
+<td>0</td>
+<td>Oxhead_excel.TestCases@1a6d8329</td></tr>
+<tr>
+<td title='Oxhead_excel.TestCases.see_The_Bar_In_The_Palladium_Bullion()'><b>see_The_Bar_In_The_Palladium_Bullion</b><br>Test class: Oxhead_excel.TestCases</td>
+<td></td>
+<td>19</td>
+<td>Oxhead_excel.TestCases@1a6d8329</td></tr>
+<tr>
+<td title='Oxhead_excel.TestCases.Customer_Is_Able_To_See_The_NewArrivals_Page()'><b>Customer_Is_Able_To_See_The_NewArrivals_Page</b><br>Test class: Oxhead_excel.TestCases</td>
+<td></td>
+<td>15</td>
+<td>Oxhead_excel.TestCases@1a6d8329</td></tr>
+<tr>
+<td title='Oxhead_excel.TestCases.Customer_is_able_to_enter_products_in_the_Search_for_Products_text_box()'><b>Customer_is_able_to_enter_products_in_the_Search_for_Products_text_box</b><br>Test class: Oxhead_excel.TestCases</td>
+<td></td>
+<td>21</td>
+<td>Oxhead_excel.TestCases@1a6d8329</td></tr>
+<tr>
+<td title='Oxhead_excel.TestCases.Customer_Is_Able_To_See_The_Palladium_On_Browse_Catagories()'><b>Customer_Is_Able_To_See_The_Palladium_On_Browse_Catagories</b><br>Test class: Oxhead_excel.TestCases</td>
+<td></td>
+<td>17</td>
+<td>Oxhead_excel.TestCases@1a6d8329</td></tr>
+<tr>
+<td title='Oxhead_excel.TestCases.select_Silver_option_in_the_select_category()'><b>select_Silver_option_in_the_select_category</b><br>Test class: Oxhead_excel.TestCases</td>
+<td></td>
+<td>19</td>
+<td>Oxhead_excel.TestCases@1a6d8329</td></tr>
+<tr>
+<td title='Oxhead_excel.TestCases.select_Gold_option_in_the_select_category()'><b>select_Gold_option_in_the_select_category</b><br>Test class: Oxhead_excel.TestCases</td>
+<td></td>
+<td>16</td>
+<td>Oxhead_excel.TestCases@1a6d8329</td></tr>
+<tr>
+<td title='Oxhead_excel.TestCases.select_Platinum_option_in_the_select_category()'><b>select_Platinum_option_in_the_select_category</b><br>Test class: Oxhead_excel.TestCases</td>
+<td></td>
+<td>19</td>
+<td>Oxhead_excel.TestCases@1a6d8329</td></tr>
+<tr>
+<td title='Oxhead_excel.TestCases.Customer_Is_Able_To_Do_Logout()'><b>Customer_Is_Able_To_Do_Logout</b><br>Test class: Oxhead_excel.TestCases</td>
+<td></td>
+<td>21</td>
+<td>Oxhead_excel.TestCases@1a6d8329</td></tr>
+<tr>
+<td title='Oxhead_excel.TestCases.Customer_Is_Able_To_See_The_Silver_On_Browse_Catagories()'><b>Customer_Is_Able_To_See_The_Silver_On_Browse_Catagories</b><br>Test class: Oxhead_excel.TestCases</td>
+<td></td>
+<td>20</td>
+<td>Oxhead_excel.TestCases@1a6d8329</td></tr>
+<tr>
+<td title='Oxhead_excel.TestCases.click_On_Create_An_Account_Link()'><b>click_On_Create_An_Account_Link</b><br>Test class: Oxhead_excel.TestCases</td>
+<td></td>
+<td>5</td>
+<td>Oxhead_excel.TestCases@1a6d8329</td></tr>
+<tr>
+<td title='Oxhead_excel.TestCases.Customer_Is_Able_To_click_On_The_Shop_Now_Button_It_Has_To_Redirect_To_That_Particular_Page()'><b>Customer_Is_Able_To_click_On_The_Shop_Now_Button_It_Has_To_Redirect_To_That_Particular_Page</b><br>Test class: Oxhead_excel.TestCases</td>
+<td></td>
+<td>22</td>
+<td>Oxhead_excel.TestCases@1a6d8329</td></tr>
+<tr>
+<td title='Oxhead_excel.TestCases.Customer_is_able_to_see_No_products_were_found_matching_your_selection_message()'><b>Customer_is_able_to_see_No_products_were_found_matching_your_selection_message</b><br>Test class: Oxhead_excel.TestCases</td>
+<td></td>
+<td>15</td>
+<td>Oxhead_excel.TestCases@1a6d8329</td></tr>
+<tr>
+<td title='Oxhead_excel.TestCases.select_Allproducts_option_in_the_select_category()'><b>select_Allproducts_option_in_the_select_category</b><br>Test class: Oxhead_excel.TestCases</td>
+<td></td>
+<td>17</td>
+<td>Oxhead_excel.TestCases@1a6d8329</td></tr>
+<tr>
+<td title='Oxhead_excel.TestCases.click_On_Remeber_Me_CheckBox()'><b>click_On_Remeber_Me_CheckBox</b><br>Test class: Oxhead_excel.TestCases</td>
+<td></td>
+<td>13</td>
+<td>Oxhead_excel.TestCases@1a6d8329</td></tr>
+<tr>
+<td title='Oxhead_excel.TestCases.Customer_is_able_to_see_the_sticky_header_is_fixed_at_that_place_it_is_comingdown()'><b>Customer_is_able_to_see_the_sticky_header_is_fixed_at_that_place_it_is_comingdown</b><br>Test class: Oxhead_excel.TestCases</td>
+<td></td>
+<td>10</td>
+<td>Oxhead_excel.TestCases@1a6d8329</td></tr>
+</table><p>
+</body>
+</html>

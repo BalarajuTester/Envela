@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="5">
+
+<!-- <listeners>
+<listener class-name="Oxhead.Listeners"></listener>
+</listeners> -->
+
+  <test name="TestOnChromeDriver">
+  <parameter name="bwr" value="chrome"></parameter>
+  <parameter name="url" value="https://oxheaduatstg.wpengine.com/"></parameter>
+   <classes>
+   <class name="Oxhead.TestCases"> 
+      </class>
+    </classes>
+  </test> <!-- Test -->
+  
+  <!-- <test name="TestOnFirefoxDriver">
+  <parameter name="bwr" value="firefox"></parameter>
+  <parameter name="url" value="https://oxheaduatstg.wpengine.com/"></parameter>
+    <classes>
+      <class name="Oxhead.TestCases">
+      </class>
+    </classes>
+  </test> -->
+  <!--  <test name="TestOnEdgeDriver">
+  <parameter name="bwr" value="edge"></parameter>
+  <parameter name="url" value="https://oxheaduatstg.wpengine.com/"></parameter>
+    <classes>
+      <class name="Oxhead.TestCases">
+       <methods>
+      <include name="passwordHasBeenResetSuccessfullyMessage"></include>
+      <include name="passwordDoesNotMatchMessage27"></include>
+      <include name="pleaseEnterYourPasswordMessage"></include>
+      <include name="passwordDoesNotMatchMessage29"></include>
+      </methods>
+      </class>
+    </classes>
+  </test>  -->
+  
+</suite> <!-- Suite -->

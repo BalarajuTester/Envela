@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="TestOnChromeDriver(failed)">
+    <parameter name="bwr" value="chrome"/>
+    <parameter name="url" value="https://oxheaduatstg.wpengine.com/"/>
+    <classes>
+      <class name="Oxhead_excel.TestCases">
+        <methods>
+          <include name="Customer_Is_Able_To_See_The_Gold_On_Browse_Catagories"/>
+          <include name="Customer_Is_Able_To_See_Product_In_ShoppingCart_Page"/>
+          <include name="Customer_Is_Able_To_See_Shipping_And_Delivery_Page"/>
+          <include name="getResult"/>
+          <include name="Customer_Is_Not_Able_To_See_Product_In_ShoppingCart_Page"/>
+          <include name="Customer_Is_Able_To_See_Product_In_ShoppingCart_Page_From_NewArrivals_page"/>
+          <include name="select_Blank_option_in_the_select_category"/>
+          <include name="Customer_Is_Able_To_See_The_Platinum_On_Browse_Catagories"/>
+          <include name="see_The_Bar_In_The_Palladium_Bullion"/>
+          <include name="Customer_Is_Able_To_See_The_Palladium_On_Browse_Catagories"/>
+          <include name="Customer_Is_Able_To_click_On_The_Shop_Now_Button_It_Has_To_Redirect_To_That_Particular_Page"/>
+          <include name="select_Palladium_option_in_the_select_category"/>
+          <include name="Customer_Is_able_To_Track_The_Cash_On_Delivery"/>
+          <include name="tearDown"/>
+          <include name="customer_Is_clicking_On_The_Shop_Now_Button_It_Has_To_Redirect_To_That_Particular_Page"/>
+          <include name="customer_Is_Able_To_See_The_HomePage"/>
+          <include name="Customer_Is_Able_To_Do_Logout"/>
+          <include name="Customer_Is_Able_To_Logout_From_The_Application"/>
+          <include name="Customer_Is_Able_To_See_The_AllProducts_On_Browse_Catagories"/>
+          <include name="select_Silver_option_in_the_select_category"/>
+          <include name="setUp"/>
+          <include name="select_Platinum_option_in_the_select_category"/>
+          <include name="Customer_Is_Able_To_See_The_Silver_On_Browse_Catagories"/>
+          <include name="customer_Is_Able_To_See_The_OrderDetails"/>
+          <include name="Customer_is_able_to_do_the_payment_method_process"/>
+          <include name="Customer_Is_Able_To_See_The_NewArrivals_Page"/>
+          <include name="startReport"/>
+          <include name="Customer_is_able_to_see_the_sticky_header_is_fixed_at_that_place_it_is_comingdown"/>
+        </methods>
+      </class> <!-- Oxhead_excel.TestCases -->
+    </classes>
+  </test> <!-- TestOnChromeDriver(failed) -->
+</suite> <!-- Failed suite [Suite] -->
